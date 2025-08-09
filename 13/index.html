@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> EEEpen </title>
+    <link rel="icon" href="/about/icon.png">
+    <link rel="stylesheet" href="../styles.css">
+    <script src="../script.js"></script>
+</head>
+<body>
+<div class="stack">
+
+    <div> <a href="../"> < back </a> </div>
+    <div> 13 AC Power Analysis </div>
+    <img src="q0_493_494.png">
+    <div class="space"></div>
+
+    <img src="q1_485.png">
+    <div class="tiles">
+        <div> P<sub>src,ave</sub> = </div>  <div> <input oninput="check(this, 2.5);"> W supplied </div>
+    </div>
+    <div class="space"></div>
+
+    <img src="q2_485.png">
+    <div class="tiles">
+        <div> P<sub>3&Omega;,ave </sub> = </div>  <div> <input oninput="check_tol(this, 15.36);"> kW absorbed </div>
+        <div> P<sub>j1&Omega;,ave </sub> = </div>  <div> <input oninput="check(this, 0);"> W absorbed </div>
+    </div>
+    <div class="space"></div>
+
+    <img src="q3_496.png">
+    <div class="tiles">
+        <div> P<sub>30V</sub> = </div>  <div> <input oninput="check(this, 125);"> W supplied </div>
+        <div> pf<sub>30V</sub> = </div>  <div> <input oninput="check_tol(this, 0.9734);"> </div>
+    </div>
+    <div> lead or lag? <input oninput="check(this, 'lead');"> </div>
+    <div class="space"></div>
+
+    <img src="q4_496.png">
+    <div class="tiles">
+        <div> P<sub>165V</sub> = </div>  <div> <input oninput="check_tol(this, 2.008);"> kW supplied </div>
+        <div> pf<sub>165V</sub> = </div>  <div> <input oninput="check_tol(this, 0.936);"> </div>
+    </div>
+    <div> lead or lag? <input oninput="check(this, 'lag');"> </div>
+    <div class="space"></div>
+
+    <img src="q5_502.png">
+    <div class="tiles">
+        <div> V = </div>  <div> <input oninput="check_tol(this, 240.7);"> V (rms) &angle; <input oninput="check_tol(this, 21.45);"> &deg; </div>
+    </div>
+    <div class="space"></div>
+
+    <img src="q6_503.png">
+    <div> power supplied by the source: </div>
+    <div class="tiles">
+        <div> S = </div>  <div> <input oninput="check_tol(this, 462.4);"> + j <input oninput="check_tol(this, 134.6);"> VA </div>
+        <div> pf = </div>  <div> <input oninput="check_tol(this, 0.96);"> </div>
+    </div>
+    <div> lead or lag? <input oninput="check(this, 'lag');"> </div>
+    <div class="space"></div>
+
+</div>
+</body>
+</html>

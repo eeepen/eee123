@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> EEEpen </title>
+    <link rel="icon" href="/about/icon.png">
+    <link rel="stylesheet" href="../styles.css">
+    <script src="../script.js"></script>
+    <script>
+        function get_lsf(key) {
+            let string_key = String(key);
+            let decimal_index = string_key.indexOf(".");
+            if (decimal_index === -1)
+                return 1;
+            let decimal_places = string_key.length - decimal_index - 2;  // float error
+            return Math.pow(10, - decimal_places);
+        }
+    </script>
+</head>
+<body>
+<div class="stack">
+
+    <div> <a href="../"> < back </a> </div>
+    <div> 12 Sinusoidal Steady-State Analysis </div>
+    <img src="q1_437.png">
+    <div class="tiles">
+        <div> i<sub>x</sub> = </div>  <div> <input oninput="check(this, 7.59);">cos( <input oninput="check(this, 4);">t + <input oninput="check_tol(this, 108.4);">&deg; ) A </div>
+    </div>
+    <div class="space"></div>
+
+    <img src="q2_439.png">
+    <div class="tiles">
+        <div> v<sub>x</sub>(t) = </div>  <div> <input oninput="check_tol(this, 11.33);">cos( <input oninput="check(this, 2);">t + <input oninput="check_tol(this, 60.01);">&deg; ) V </div>
+        <div> v<sub>2</sub>(t) = </div>  <div> <input oninput="check_tol(this, 33.02);">cos( <input oninput="check(this, 2);">t + <input oninput="check_tol(this, 57.12);">&deg; ) V </div>
+    </div>
+    <div class="space"></div>
+
+    <img src="q3_439.png">
+    <div> amplitude for magnitude </div>
+    <div class="tiles">
+        <div> V<sub>1</sub> = </div>  <div> <input oninput="check_tol(this, 25.78);"> V &angle; <input oninput="check_tol(this, -70.48);"> &deg; </div>
+        <div> V<sub>2</sub> = </div>  <div> <input oninput="check_tol(this, 31.41);"> V &angle; <input oninput="check_tol(this, -87.18);"> &deg; </div>
+    </div>
+    <div class="space"></div>
+
+    <img src="q4_440.png">
+    <div> amplitude for magnitude </div>
+    <div class="tiles">
+        <div> V<sub>1</sub> = </div>  <div> <input oninput="check_tol(this, 96.8);"> V &angle; <input oninput="check_tol(this, 69.66);"> &deg; </div>
+        <div> V<sub>2</sub> = </div>  <div> <input oninput="check_tol(this, 16.88);"> V &angle; <input oninput="check_tol(this, 165.7);"> &deg; </div>
+    </div>
+    <div class="space"></div>
+
+    <img src="q5_441.png">
+    <div> amplitude for magnitude </div>
+    <div class="tiles">
+        <div> I<sub>o</sub> = </div>  <div> <input oninput="check_tol(this, 6.12);"> A &angle; <input oninput="check_tol(this, 144.8);"> &deg; </div>
+    </div>
+    <div class="space"></div>
+
+    <img src="q6_441.png">
+    <div> amplitude for magnitude </div>
+    <div class="tiles">
+        <div> I<sub>o</sub> = </div>  <div> <input oninput="check_tol(this, 5.969);"> A &angle; <input oninput="check_tol(this, 65.45);"> &deg; </div>
+    </div>
+    <div class="space"></div>
+
+    <img src="q7_444.png">
+    <div> amplitude for magnitude </div>
+    <div class="tiles">
+        <div> I<sub>o</sub> = </div>  <div> <input oninput="check_tol(this, 6.089);"> A &angle; <input oninput="check_tol(this, 5.94);"> &deg; </div>
+    </div>
+    <div class="space"></div>
+
+</div>
+</body>
+</html>

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> EEEpen </title>
+    <link rel="icon" href="/about/icon.png">
+    <link rel="stylesheet" href="../styles.css">
+    <script src="../script.js"></script>
+    <script>
+        function get_lsf(key) {
+            let string_key = String(key);
+            let decimal_index = string_key.indexOf(".");
+            if (decimal_index === -1)
+                return 1;
+            let decimal_places = string_key.length - decimal_index - 3;  // engineering mode
+            return Math.pow(10, - decimal_places);
+        }
+    </script>
+</head>
+<body>
+<div class="stack">
+
+    <div> <a href="../"> < back </a> </div>
+    <div> 8 MOS Field-Effect Transistors </div>
+    <img src="q0.png">
+    <div class="space"></div>
+
+    <img src="q1.png">
+    <div class="tiles">
+        <div> v = </div>  <div> <input oninput="check(this, 10);"> V </div>
+        <div> v<sub>o</sub> = </div>  <div> <input oninput="check(this, -40);"> V </div>
+    </div>
+    <div> <a href="https://youtu.be/aReLBOBCePU?si=_ZVGaRAmJc7z9XiI&t=41" target="_blank"> key > </a> </div>
+    <div class="space"></div>
+
+    <img src="q2.png">
+    <div> assume cut-off </div>
+    <div> v<sub>gs</sub> = <input oninput="check(this, 5.4);"> V </div>
+    <div> assume saturation </div>
+    <div class="tiles">
+        <div> v<sub>gs</sub> = </div>  <div> <input oninput="check(this, 5.4);"> V </div>
+        <div> v<sub>gd</sub> = </div>  <div> <input oninput="check(this, -4.92);"> V </div>
+        <div> v<sub>o</sub> = </div>  <div> <input oninput="check(this, 10.32);"> V </div>
+    </div>
+    <div> <a href="https://youtu.be/aReLBOBCePU?si=3lGNIZ2KnTgVr_ZV&t=1104" target="_blank"> key > </a> </div>
+    <div class="space"></div>
+
+    <img src="q3.png">
+    <div> co, sat, or ohm </div>
+    <div class="tiles">
+        <div> M1 is </div>  <div> <input oninput="check(this, 'sat');"> </div>
+        <div> M2 is </div>  <div> <input oninput="check(this, 'sat');"> </div>
+        <div> i<sub>d</sub> = </div>  <div> <input oninput="check_tol(this, 5.641);"> A </div>
+        <div> v<sub>o</sub> = </div>  <div> <input oninput="check_tol(this, 4.359);"> V </div>
+    </div>
+    <div> <a href="https://youtu.be/aReLBOBCePU?si=40LKJv412EKoqAvv&t=1329" target="_blank"> key > </a> </div>
+    <div class="space"></div>
+
+    <img src="q4.png">
+    <div class="tiles">
+        <div> Q is </div>  <div> <input oninput="check(this, 'active');"> (co, active, sat) </div>
+        <div> M is </div>  <div> <input oninput="check(this, 'sat');"> (co, sat, ohm) </div>
+        <div> v<sub>ce</sub> = </div>  <div> <input oninput="check(this, 4);"> V </div>
+        <div> v<sub>o</sub> = </div>  <div> <input oninput="check(this, 5.5);"> V </div>
+    </div>
+    <div> <a href="https://youtu.be/aReLBOBCePU?si=UHwgeYpO9myNjFSy&t=1542" target="_blank"> key > </a> </div>
+    <div class="space"></div>
+
+</div>
+</body>
+</html>

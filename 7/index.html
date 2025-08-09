@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> EEEpen </title>
+    <link rel="icon" href="/about/icon.png">
+    <link rel="stylesheet" href="../styles.css">
+    <script src="../script.js"></script>
+</head>
+<body>
+<div class="stack">
+
+    <div> <a href="../"> < back </a> </div>
+    <div> 7 Bipolar Junction Transistors </div>
+    <img src="q0.png">
+    <div class="space"></div>
+
+    <img src="q1.png">
+    <div class="tiles">
+        <div> i = </div>  <div> <input oninput="check(this, 5);"> A </div>
+        <div> v<sub>o</sub> = </div>  <div> <input oninput="check(this, -20);"> V </div>
+    </div>
+    <div> <a href="https://youtu.be/aReLBOBCePU?si=FW0nr1mnwh1ugoUc&t=4" target="_blank"> key > </a> </div>
+    <div class="space"></div>
+
+    <img src="q2.png">
+    <div> assume cut-off </div>
+    <div> v<sub>be</sub> = <input oninput="check(this, 1.2);"> V </div>
+    <div> assume forward-active </div>
+    <div class="tiles">
+        <div> i<sub>b</sub> = </div>  <div> <input oninput="check(this, 50);"> &micro;A </div>
+        <div> v<sub>ce</sub> = </div>  <div> <input oninput="check(this, 5);"> V </div>
+        <div> v<sub>o</sub> = </div>  <div> <input oninput="check(this, 5);"> V </div>
+    </div>
+    <div> <a href="https://youtu.be/aReLBOBCePU?si=xtpG2-Eo1WAEgFyW&t=476" target="_blank"> key > </a> </div>
+    <div class="space"></div>
+
+    <img src="q3.png">
+    <div> co, active, or sat </div>
+    <div class="tiles">
+        <div> Q1 is </div>  <div> <input oninput="check(this, 'active');"> </div>
+        <div> Q2 is </div>  <div> <input oninput="check(this, 'sat');"> </div>
+        <div> v<sub>o</sub> = </div>  <div> <input oninput="check(this, 0.2);"> V </div>
+    </div>
+    <div> <a href="https://youtu.be/aReLBOBCePU?si=DvZRvgOZPbBljiw4&t=703" target="_blank"> key > </a> </div>
+    <div class="space"></div>
+
+    <img src="q4.png">
+    <div></div>
+    <div class="tiles">
+        <div> D is </div>  <div> <input oninput="check(this, 'on');"> (on or off) </div>
+        <div> Q is </div>  <div> <input oninput="check(this, 'active');"> (co, active, sat) </div>
+        <div> i<sub>d</sub> = </div>  <div> <input oninput="check_tol(this, 2016);"> &micro;A </div>
+        <div> p<sub>d,o</sub> = </div>  <div> <input oninput="check_tol(this, 4.033);"> mW absorbed </div>
+    </div>
+    <div> <a href="https://youtu.be/aReLBOBCePU?si=81a5rKJr4qJX4ZdD&t=922" target="_blank"> key > </a> </div>
+    <div class="space"></div>
+
+</div>
+</body>
+</html>

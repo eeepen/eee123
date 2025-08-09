@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> EEEpen </title>
+    <link rel="icon" href="/about/icon.png">
+    <link rel="stylesheet" href="../styles.css">
+    <script src="../script.js"></script>
+    <script>
+        function get_lsf(key) {
+            let string_key = String(key);
+            let decimal_index = string_key.indexOf(".");
+            if (decimal_index === -1)
+                return 1;
+            let decimal_places = string_key.length - decimal_index - 3;  // engineer mode
+            return Math.pow(10, - decimal_places);
+        }
+    </script>
+</head>
+<body>
+<div class="stack">
+
+    <div> <a href="../"> < back </a> </div>
+    <div> 9 Logic Circuits </div>
+    <img src="q0.png">
+    <div class="space"></div>
+
+    <img src="q1.png">
+    <div class="tiles">
+        <div> R<sub>ds</sub> = </div>  <div> <input oninput="check_tol(this, 10.25);"> &Omega; </div>
+        <div> v<sub>o</sub> = </div>  <div> <input oninput="check_tol(this, 0.1946);"> V </div>
+    </div>
+    <div> <a href="https://youtu.be/u0Zm_yYyJ7M?si=rIuebO90XDXN1lOJ&t=5" target="_blank"> key > </a> </div>
+    <div class="space"></div>
+
+    <img src="q2.png">
+    <div class="tiles">
+        <div> v<sub>o</sub> = </div>  <div> <input oninput="check(this, 5);"> V </div>
+    </div>
+    <div> not, and, or, xor </div>
+    <div> <input oninput="check(this, 'or');"> gate </div>
+    <div> <a href="https://youtu.be/u0Zm_yYyJ7M?si=5KkntWinfk8l7tZD&t=304" target="_blank"> key > </a> </div>
+    <div class="space"></div>
+
+    <img src="q3.png">
+    <div class="tiles">
+        <div> v<sub>o</sub> = </div>  <div> <input oninput="check(this, 5);"> V </div>
+    </div>
+    <div> not, and, or, xor </div>
+    <div> <input oninput="check(this, 'and');"> gate </div>
+    <div> <a href="https://youtu.be/u0Zm_yYyJ7M?si=d9j7cK1XCNDFz7Fq&t=608" target="_blank"> key > </a> </div>
+    <div class="space"></div>
+
+</div>
+</body>
+</html>

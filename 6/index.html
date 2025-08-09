@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> EEEpen </title>
+    <link rel="icon" href="/about/icon.png">
+    <link rel="stylesheet" href="../styles.css">
+    <script src="../script.js"></script>
+    <script>
+        function get_lsf(key) {
+            let string_key = String(key);
+            let decimal_index = string_key.indexOf(".");
+            if (decimal_index === -1)
+                return 1;
+            let decimal_places = string_key.length - decimal_index - 2;  // float error
+            return Math.pow(10, - decimal_places);
+        }
+    </script>
+</head>
+<body>
+<div class="stack">
+
+    <div> <a href="../"> < back </a> </div>
+    <div> 6 Diodes </div>
+    <img src="q0.png">
+    <div class="space"></div>
+
+    <img src="q1.png">
+    <div> assume D is off </div>
+    <div> v<sub>d,off</sub> = <input oninput="check(this, 5);"> V </div>
+    <div> D is on or off? <input oninput="check(this, 'on');"></div>
+    <div class="tiles">
+        <div> i<sub>d,on</sub> = </div>  <div> <input oninput="check(this, 4.3);"> mA </div>
+        <div> v<sub>o</sub> = </div>  <div>  <input oninput="check(this, 0.7);"> V </div>
+    </div>
+    <div> <a href="https://youtu.be/aReLBOBCePU?si=uAB2uXshvn18w8k8&t=78" target="_blank"> key > </a> </div>
+    <div class="space"></div>
+
+    <img src="q2.png">
+    <div> on or off </div>
+    <div class="tiles">
+        <div> D<sub>1</sub> is </div>  <div> <input oninput="check(this, 'off');"> </div>
+        <div> D<sub>2</sub> is </div>  <div> <input oninput="check(this, 'on');"> </div>
+        <div> v<sub>d1</sub> = </div>  <div> <input oninput="check_tol(this, -6.333);"> V </div>
+        <div> i<sub>d2</sub> = </div>  <div> <input oninput="check_tol(this, 2.667);"> mA </div>
+        <div> v<sub>o</sub>  = </div>  <div> <input oninput="check(this, 8);"> V </div>
+    </div>
+    <div> <a href="https://youtu.be/aReLBOBCePU?si=bvoMRNjATk164_x0&t=234" target="_blank"> key > </a> </div>
+    <div class="space"></div>
+
+    <img src="q3.png">
+    <div> on or off </div>
+    <div class="tiles">
+        <div> D is </div>  <div> <input oninput="check(this, 'on');"> </div>
+        <div> i<sub>d</sub> = </div>  <div> <input oninput="check_tol(this, 0.4267);"> A </div>
+        <div> i = </div>  <div> <input oninput="check_tol(this, 0.2333);"> A </div>
+    </div>
+    <div> <a href="https://youtu.be/aReLBOBCePU?si=x0EWQLJJRP-UdIPK&t=388" target="_blank"> key > </a> </div>
+    <div class="space"></div>
+
+</div>
+</body>
+</html>
